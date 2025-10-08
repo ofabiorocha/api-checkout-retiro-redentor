@@ -11,7 +11,11 @@ app.use(express.json());
 
 app.use("/api/checkout", checkoutRouter);
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`🚀 API rodando em http://localhost:${PORT}`);
-});
+// PARA RODAR LOCAL
+
+// const PORT = process.env.PORT || 4000;
+// app.listen(PORT, () => {
+//   console.log(`🚀 API rodando em http://localhost:${PORT}`);
+// });
+
+export default app;
