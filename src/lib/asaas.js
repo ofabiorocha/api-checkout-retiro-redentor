@@ -72,6 +72,7 @@ export async function createCardCheckout({ buyer, items }) {
       interest: true, // juros ficam por conta do comprador
       fine: 0,
       customer: customer.id,
+      dueDateLimitDays: 1
       // NOTA: callback só se você tiver domínio configurado na conta Asaas
       // callback: { successUrl: "https://seusite.com/sucesso", autoRedirect: true }
     });
