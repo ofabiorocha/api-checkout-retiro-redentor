@@ -65,7 +65,7 @@ export async function createCardCheckout({ buyer, items }) {
       name: `Checkout ${buyer.name}`,
       description: items.map(i => `${i.qty}x ${i.name}`).join(", "),
       chargeType: "DETACHED",
-      billingType: "UNDEFINED", // deixa o checkout decidir (cartão)
+      billingType: "CREDIT_CARD", // deixa o checkout decidir (cartão)
       value: totalValue,
       allowInstallmentPayment: true,
       maxInstallmentCount: 12,
